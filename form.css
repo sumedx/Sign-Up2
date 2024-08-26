@@ -1,0 +1,179 @@
+:root {
+    --color: #663399;
+    --txt: rgb(185, 185, 185);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--txt);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content, .logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.picture {
+    background-image: url(./download.jpeg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.jjk-logo {
+    height: 10vh;
+}
+
+.right {
+    width: 60vw;
+    background-color: #000000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.info {
+    padding-left: 3vw;
+}
+
+.heading {
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.last-line {
+    margin: 40px 0 80px;
+}
+
+.form {
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: #000000;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: black;
+}
+
+.sign-in {
+    display: flex;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .picture {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo {
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .right {
+        width: auto;
+        height: auto;
+    }
+    .info {
+        width: auto;
+        margin-top: 30px;
+    }
+    .left {
+        padding: 10px 20px;
+    }
+    .last-line {
+        padding: 20px 0;
+        margin: 0;
+    }
+    .form {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .input {
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .button, .sign-in {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button {
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+}
