@@ -16,13 +16,14 @@
     height: 100vh;
 }
 
-.content, .logo {
+.content,
+.logo {
     display: flex;
     flex-flow: row wrap;
 }
 
 .picture {
-    background-image: url(./download.jpeg);
+    background-image: url(./bg.jpeg);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -124,36 +125,44 @@ a:hover {
         height: auto;
         text-align: center;
     }
+
     .picture {
         width: 100vw;
         height: 15vh;
         display: flex;
         background-size: 100vw;
     }
+
     .logo {
         width: 100vw;
         position: static;
         gap: 10px;
     }
+
     .right {
         width: auto;
         height: auto;
     }
+
     .info {
         width: auto;
         margin-top: 30px;
     }
+
     .left {
         padding: 10px 20px;
     }
+
     .last-line {
         padding: 20px 0;
         margin: 0;
     }
+
     .form {
         flex-flow: column nowrap;
         align-items: center;
     }
+
     .input {
         text-align: left;
         width: auto;
@@ -161,16 +170,20 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
+
     input {
         font-size: 0.9rem;
         height: 1.5rem;
         width: 70vw;
     }
-    .button, .sign-in {
+
+    .button,
+    .sign-in {
         display: flex;
         justify-content: center;
         margin-bottom: 0px;
     }
+
     button {
         margin-bottom: 0px;
         width: 60vw;
